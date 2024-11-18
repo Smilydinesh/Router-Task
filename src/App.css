@@ -1,0 +1,175 @@
+@media (min-width: 300px) {
+    .product{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 700px) {
+    .product{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 10px
+    }
+}
+
+@media (min-width: 900px) {
+    .product{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin: 10px;
+    }
+
+}
+
+.Cart {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .Cart-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .Image {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  .Title {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  .Price {
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .Cart {
+      flex-direction: column;
+      padding: 0 10px;
+    }
+  
+    .Cart-img {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Image {
+      width: 80%;
+      height: 20%;
+      object-fit: fill;
+      margin-top: 5px;
+    }
+  
+    .Title {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .Price {
+      font-size: 2rem;
+      text-align: center;
+      padding: 0;
+    }
+
+    .Cart-Data {
+      display: flex;
+    }
+  
+    .flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .flex.justify-between {
+      justify-content: center; 
+    }
+  
+    .Title, .Price {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .Cart h3 {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Title {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .Image {
+      width: 80%;
+      height: 200px;
+      margin-top: 5px;
+    }
+  
+    .Price {
+      font-size: 2rem;
+    }
+  
+    .Cart-img {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Cart h3 {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .Cart {
+      flex-direction: row; 
+    }
+  
+    .Cart-img {
+      max-width: 80%;
+      flex-direction: row;
+    }
+  
+    .Image {
+      max-width: 150px;
+      height: 150px;
+      margin: 10px 20px;
+    }
+  
+    .Title {
+      font-size: 1.2rem;
+    }
+  
+    .Price {
+      font-size: 1.2rem;
+    }
+
+    .Cart-Data{
+      display: flex;
+    }
+  
+    .flex.justify-between {
+      justify-content: space-between;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .Cart-Data {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .Image {
+      object-fit: fill;
+    }
+  }
