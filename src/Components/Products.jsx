@@ -1,15 +1,7 @@
 import React, {useState, useEffect} from 'react'
-import axios from 'axios'
 
 function Products({ cartItems, setCartItems }) {
   const [products, setProducts] = useState([]);
-    
-  {/*useEffect(() => {
-    axios.get('https://fakestoreapi.com/products')
-    .then(response => {
-      setProducts(response.data);
-    })
-  }, []);*/}
 
   useEffect(() => {
     fetch('https://fakestoreapi.com/products')  
